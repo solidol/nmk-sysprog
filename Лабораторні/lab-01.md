@@ -96,3 +96,13 @@ void main()
 7.  Яку іункцію виконує оператор `%`?
 
 ## Довідники та додаткові матеріали
+
+1. [Написання першої програми на С++](https://codeguida.com/post/668/) 
+2. [Написання простої лінійної програми на мові С++](https://stud.com.ua/254838/programuvannia/napysannia-prohramy-na-movie-c-yak-napisaty-prostu-linijnu-prohramu) 
+3. [Створення першої програми на С++ в Linux](https://code-maven.com/create-your-first-c-plus-plus-program-on-linux) [Написання першої програми на С++](https://studway.com.ua/cplusplus/persha-programa-na-c-) 
+4. [Написання першої програми на С++](https://uchitelya.com/programming/cpp/first-program) 
+5. [Writing your first C++ program - Hello World example](https://www.geeksforgeeks.org/writing-first-c-program-hello-world-example/) 
+6. [Learn C](https://www.learn-c.org/) 
+7. [Codecademy - Learn C++](https://www.codecademy.com/learn/learn-c-plus-plus) 
+8. [C++ Examples](https://www.programiz.com/cpp-programming/examples) 
+9. [C++ Basic Syntax](https://www.tutorialspoint.com/cplusplus/cpp_basic_syntax.htm)

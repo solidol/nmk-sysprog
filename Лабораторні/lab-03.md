@@ -107,3 +107,12 @@ return 0;
 6.  Опішіть роботу мовної конструкції `switch - case`
 
 ## Довідники та додаткові матеріали
+
+1. [C++ if-else statement and its applications - GeeksforGeeks](https://www.geeksforgeeks.org/cpp-if-else-statement-and-its-applications/) 
+2. [C++ if, if...else and Nested if...else Statement - Programiz](https://www.programiz.com/cpp-programming/if-else) 
+3. [C++ Conditions and If Statements - w3schools](https://www.w3schools.com/cpp/cpp_conditions.asp) 
+4. [C++ Decision Making - TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_decision_making.htm) 
+5. [Control Structures - C++ Tutorials - cplusplus.com](https://www.cplusplus.com/doc/tutorial/control/) 
+6. [Decision Making in C++ (if, if-else, switch, nested if) - Techiedelight](https://www.techiedelight.com/decision-making-cpp/) 
+7. [Умовний оператор if-else-switch в C++ - ProProProgs](https://proproprogs.com/cpp-if-else-switch/) 
+8. [Умовні оператори в C++: if, if-else, switch - Codeguida](https://codeguida.com/post/556)

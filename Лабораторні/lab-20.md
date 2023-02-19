@@ -87,3 +87,18 @@ for(int i = 0; i < 100; i++)
 3. Для чого використовуеться директива `for`? Чим вона відрізняється від інших?
 
 ## Довідники та додаткові матеріали
+
+1.  [OpenMP official website](https://www.openmp.org/)
+2.  [OpenMP API Specification 5.1](https://www.openmp.org/wp-content/uploads/OpenMP-API-Specification-5.1.pdf)
+3.  [OpenMP Language Specification on Microsoft Docs](https://docs.microsoft.com/en-us/cpp/parallel/openmp/reference/openmp-language-specification?view=msvc-160)
+4.  [libgomp documentation (GCC implementation of OpenMP)](https://gcc.gnu.org/onlinedocs/libgomp/index.html#Top)
+5.  [OpenMP support in Intel Threading Building Blocks](https://software.intel.com/content/www/us/en/develop/documentation/tbb-documentation/top/intel-threading-building-blocks-developer-reference-c/openmp-support/openmp-support-in-tbb.html)
+6.  [OpenMP Tutorials and Articles](https://www.openmp.org/resources/tutorials-articles/)
+7.  [Books on OpenMP](https://www.openmp.org/resources/books-3/)
+8.  [Офіційний веб-сайт OpenMP](https://www.openmp.org/uk/)
+9.  [Специфікація API OpenMP 5.1](https://www.openmp.org/wp-content/uploads/OpenMP-API-Specification-5.1.pdf)
+10. [Специфікація мови OpenMP на Microsoft Docs](https://docs.microsoft.com/uk-ua/cpp/parallel/openmp/reference/openmp-language-specification?view=msvc-160)
+11. [Документація libgomp (реалізація OpenMP в GCC)](https://gcc.gnu.org/onlinedocs/libgomp/index.html#Top)
+12. [Підтримка OpenMP в Intel Threading Building Blocks](https://software.intel.com/content/www/us/en/develop/documentation/tbb-documentation/top/intel-threading-building-blocks-developer-reference-c/openmp-support/openmp-support-in-tbb.html)
+13. [Навчальні матеріали та статті про OpenMP](https://www.openmp.org/resources/tutorials-articles/)
+14. [Книги про OpenMP](https://www.openmp.org/resources/books-3/)

@@ -232,3 +232,14 @@ xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"
 ## Контрольні запитання
 
 ## Довідники та додаткові матеріали
+
+1. [Creating and using DLLs](https://docs.microsoft.com/en-us/cpp/build/creating-and-using-shared-libraries-dlls)
+2. [Creating a C++ Win32 DLL](https://www.codeproject.com/Articles/28969/HowTo-Export-C-classes-from-a-DLL)
+3. [Creating and using DLL in VC++](https://www.codeproject.com/Articles/28969/HowTo-Export-C-classes-from-a-DLL)
+4. [DLL Tutorial For Beginners](https://www.youtube.com/watch?v=JG4NWXdZTJw)
+5. [DLL Tutorial](https://www.tutorialspoint.com/what-is-a-dll-in-cplusplus) 
+6. [Створення DLL бібліотек на мові С/C++](https://proselyte.net/tutorials/dll-c-cpp/)
+2. [Створення DLL у C++](https://www.examland.com.ua/c-windows/c-dll)
+3. [DLL (Dynamic Link Library) в C++.](https://studopedia.org/8-53086.html)
+4. [DLL на C++ – вибір оптимального варіанту створення бібліотек](https://procpp.netlify.app/2017/07/17/dll-cpp/)
+5. [C++ DLL у Visual Studio](https://cppstudio.com/post/5037/)

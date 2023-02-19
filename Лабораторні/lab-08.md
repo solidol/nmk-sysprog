@@ -132,3 +132,14 @@ int main(){
 5. Як присвоїти значення покажчику?
 
 ## Довідники та додаткові матеріали
+
+1. [Pointers in C++](https://www.geeksforgeeks.org/pointers-in-c-with-examples/)
+2. [C++ Pointers and Dynamic Memory](https://www.learncpp.com/cpp-tutorial/6-10-pointers-and-dynamic-memory/)
+3. [Pointers in C++ Programming](https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm)
+4. [Introduction to C++ Pointers](https://www.programiz.com/cpp-programming/pointers)
+5. [C++ Pointers: A Comprehensive Guide](https://www.educba.com/c-plus-plus-pointers/)
+6. [Покажчики в С++](https://prog-cpp.ru/pointers/)
+7. [Покажчики в С++. Навчальний посібник](http://pk.pzsp.net.ua/programuvannya/mova-programuvannya/c/c1-1)
+8. [C++ покажчики](http://cppstudio.com/post/5023/)
+9. [Покажчики в С++ (Презентація)](https://teacher-portal.net/materials/61090)
+10. [C++ Покажчики та звернення до функцій](https://uk.wikibooks.org/wiki/C%2B%2B_%D0%9F%D0%BE%D0%BA%D0%B0%D0%B6%D1%87%D0%B8%D0%BA%D0%B8_%D1%82%D0%B0_%D0%B7%D0%B2%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B4%D0%BE_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D0%B9)

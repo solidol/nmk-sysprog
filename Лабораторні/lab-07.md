@@ -104,9 +104,13 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 ## Довідники та додаткові матеріали
 
-1. "Multidimensional Arrays in C++" на сайті GeeksforGeeks: https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/
-2. "C++ Multidimensional Arrays" на сайті TutorialsPoint: https://www.tutorialspoint.com/cplusplus/cpp_multi_dimensional_arrays.htm
-3. "C++ Multidimensional Arrays" на сайті Programiz: https://www.programiz.com/cpp-programming/multidimensional-arrays
-4. "Multidimensional Arrays in C++ Programming" на сайті StudyTonight: https://www.studytonight.com/cpp/cpp-multidimensional-arrays.php
-5. "C++ Multidimensional Arrays" на сайті W3schools: https://www.w3schools.com/cpp/cpp_multidimensional_arrays.asp
-6. "Multidimensional Arrays in C++" на сайті Cplusplus.com: https://www.cplusplus.com/doc/tutorial/arrays/#multidimensional-arrays
+1.  [Multidimensional Arrays in C / C++](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)
+2.  [C++ Multi-Dimensional Arrays](https://www.tutorialspoint.com/cplusplus/cpp_multi_dimensional_arrays.htm)
+3.  [Multidimensional Arrays in C++](https://www.programiz.com/cpp-programming/multidimensional-arrays)
+4.  [Multidimensional Arrays in C++ - Techiedelight](https://www.techiedelight.com/multidimensional-arrays-cpp/)
+5.  [C++ Multidimensional Arrays - Studytonight](https://www.studytonight.com/cpp/multi-dimensional-arrays.php)
+6.  [Багатовимірний масив - Вікіпедія](https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%B2%D0%B8%D0%BC%D1%96%D1%80%D0%BD%D0%B8%D0%B9_%D0%BC%D0%B0%D1%81%D0%B8%D0%B2)
+7.  [Багатовимірні масиви в C++](https://www.dmytro-pavlenko.com/multidimensional-arrays-cpp/)
+8.  [Багатовимірні масиви в C++](https://cpp.com.ua/multidimensional_arrays.html)
+9.  [C++ Багатовимірні масиви](http://cppstudio.com/post/4185/)
+10. [Багатовимірні масиви у Сі](https://studway.com.ua/pz/99-informatika/19074-bagatovimirni-masivi-u-c)

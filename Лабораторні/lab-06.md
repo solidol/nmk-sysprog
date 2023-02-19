@@ -119,9 +119,11 @@ int main() {
 
 ## Довідники та додаткові матеріали
 
-1. "Arrays in C++" на сайті GeeksforGeeks: https://www.geeksforgeeks.org/arrays-in-c-cpp/
-2. "C++ Arrays" на сайті TutorialsPoint: https://www.tutorialspoint.com/cplusplus/cpp_arrays.htm
-3. "C++ Arrays - Declaration, Initialization, and Access" на сайті Programiz: https://www.programiz.com/cpp-programming/arrays
-4. "Arrays in C++ Programming" на сайті StudyTonight: https://www.studytonight.com/cpp/cpp-array.php
-5. "C++ Arrays" на сайті W3schools: https://www.w3schools.com/cpp/cpp_arrays.asp
-6. "Arrays in C++" на сайті Cplusplus.com: https://www.cplusplus.com/doc/tutorial/arrays/
+1. [Arrays in C/C++](https://www.geeksforgeeks.org/arrays-in-c-cpp/)
+2. [C++ Arrays](https://www.programiz.com/cpp-programming/arrays)
+3. [C++ Arrays - Tutorialspoint](https://www.tutorialspoint.com/cplusplus/cpp_arrays.htm)
+4. [Arrays - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/arrays/)
+5. [One Dimensional Array: Introduction & Operations](https://www.techiedelight.com/one-dimensional-array-introduction-operations/)
+6. [Одновимірні масиви в C++](https://www.ukraine.com.ua/index.php/entry/odnomirni-masyvy-v-c/)
+7. [Одновимірні масиви в C++](http://cppstudio.com/post/2392/)
+8. [Масив (програмування) - Вікіпедія](https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F))

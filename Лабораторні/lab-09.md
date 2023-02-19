@@ -151,3 +151,15 @@ void main (void) {
 4. За допомогою якого метода можна дізнатися зі скільков символів складається рядок?
 
 ## Довідники та додаткові матеріали
+
+Англійські посібники:
+
+1. [C++ Strings](https://www.geeksforgeeks.org/c-string-class-and-its-applications/) by GeeksforGeeks
+2. [C++ String Functions with Examples](https://www.guru99.com/cpp-string.html) by Guru99
+3. [C++ String](http://www.cplusplus.com/reference/string/) by cplusplus.com
+4. [String (C++)](https://en.cppreference.com/w/cpp/string/basic_string) by cppreference.com
+5. [C++ Program to Count Number of Words in a String](https://www.programiz.com/cpp-programming/examples/word-count-string) by Programiz
+6. [Строки в С++. Рядки (strings)](https://prog-cpp.ru/cpp-string/) by prog-cpp.ru
+7. [Стрічки в C++](https://www.ukrprog.com.ua/posts/programmirovanie-na-c-c/52-strichki-v-c.html) by Ukrprog
+8. [Строки в С++. Огляд і основні операції](https://studopedia.com.ua/1_22304_stroki-v-c-oglyad-i-osnovni-operatsiyi.html) by Studopedia
+9. [Строки в С++. Операції зі стрічками](https://pidpryemstvo.in.ua/cpp/strings.html) by Pidpryemstvo.in.ua

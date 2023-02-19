@@ -390,12 +390,22 @@ delete p;
     - записи упорядкувати в алфавітному порядку за назвами пунктів призначення;
     - вивести пункти призначення та номери рейсів, які обслуговує літак, тип якого введений з клавіатури. Якщо таких рейсів немає, вивести відповідне повідомлення.
 
- 
-
-
-
-
 ## Контрольні запитання
 
 
 ## Довідники та додаткові матеріали
+
+1.  [GeeksforGeeks - Object Oriented Programming(OOPs) Concept in C++](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-c/)
+2.  [W3Schools - C++ OOP](https://www.w3schools.com/cpp/cpp_oop.asp)
+3.  [TutorialsPoint - C++ Object Oriented](https://www.tutorialspoint.com/cplusplus/cpp_object_oriented.htm)
+4.  [Programiz - C++ Object-oriented Programming](https://www.programiz.com/cpp-programming/object-oriented-programming)
+5.  [Learn-C - Object Oriented Programming](https://www.learn-c.org/en/Object_Oriented_Programming)
+6.  [cplusplus.com - Classes (I)](https://www.cplusplus.com/doc/tutorial/classes/)
+7.  [Udemy - Object-Oriented Programming in C++](https://www.udemy.com/topic/object-oriented-programming-in-c-plus-plus/)
+8.  [ООП в С++. Поліморфізм і наслідування](https://www.viva64.com/en/t/0079/)
+9.  [Основы ООП в С++. Классы и объекты](https://metanit.com/cpp/tutorial/4.1.php)
+10. [LearnCpp: Introduction to Object Oriented Programming (OOP) in C++](https://www.learncpp.com/cpp-tutorial/object-oriented-programming/)
+11. [Cplusplus.com: Polymorphism](https://www.cplusplus.com/doc/tutorial/polymorphism/)
+12. [GeeksforGeeks: Object Oriented Programming (OOPs) Concept in C++](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-c/)
+13. [JavaTpoint: C++ OOPs Concepts](https://www.javatpoint.com/cpp-oops-concepts)
+14. [OOP in C++ - YouTube Playlist by Neso Academy](https://www.youtube.com/watch?v=_bYFu9mBnr4&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev)

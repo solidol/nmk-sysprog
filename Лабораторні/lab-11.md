@@ -62,3 +62,14 @@ double sqr (double p) //-- функция sqr()
 4. Яке призначення типу void? 
 
 ## Довідники та додаткові матеріали
+
+1. [C++ Functions - GeeksforGeeks](https://www.geeksforgeeks.org/functions-in-cpp/)
+2. [C++ Functions (With Examples) - Programiz](https://www.programiz.com/cpp-programming/functions)
+3. [C++ Functions - W3Schools](https://www.w3schools.com/cpp/cpp_functions.asp)
+4. [Functions in C++ | Microsoft Docs](https://docs.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-160)
+5. [C++ Functions | C++ Tutorial for Beginners - Learn C++ Online](https://www.learncplusplus.org/c-plus-plus-functions/)
+6. [Функції в C++ - ITVDN](https://itvdn.com/uk/blog/article/functions-v-cpp)
+7. [Функції в C++ | C++ для початківців](https://proglive.net/cpp/funktsiyi-v-cpp)
+8. [Функції в C++. Основні принципи - GO IT](https://goit.ua/blog/articles/funktsiyi-v-c-osnovni-principi/)
+9. [Функції в С++. Детальний опис - Chudovo.ua](https://chudovo.ua/library/programming/languages/cpp/35/)
+10. [Функції в C++. Повний посібник - YouIT](https://youit.com.ua/funktsii-v-c/)

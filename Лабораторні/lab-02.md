@@ -141,3 +141,19 @@ int main()
 
 
 ## Довідники та додаткові матеріали
+
+1. [C++ Standard Library - Reference](https://www.cplusplus.com/reference/) 
+2. [C Standard Library - GeeksforGeeks](https://www.geeksforgeeks.org/c-standard-library/) 
+3. [C++ Standard Library - TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_standard_library.htm) 
+4. [C++ Library Function - Programiz](https://www.programiz.com/cpp-programming/library-function) 
+5. [C++ Standard Library Reference - IBM](https://www.ibm.com/docs/en/zos/2.2.0?topic=stdlib-cpp-standard-library-reference) Посилання на посібники з бібліотеки MATH: 
+6. [C++ Math Library Functions - GeeksforGeeks](https://www.geeksforgeeks.org/c-math-library-functions/) 
+7. [C++ Mathematical Functions - TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_mathematical_functions.htm) [C++ cmath library - Programiz](https://www.programiz.com/cpp-programming/library-function/cmath) 
+8. [C++ Standard Math Library Functions - IBM](https://www.ibm.com/docs/en/zos/2.2.0?topic=stdlib-math-library-functions) 
+9. [C++ Mathematical Functions - cppreference.com](https://en.cppreference.com/w/cpp/numeric/math)
+10. [Стандартна бібліотека C++ - Microsoft Docs](https://docs.microsoft.com/uk-ua/cpp/standard-library/) 
+11. [Стандартна бібліотека C++ - cpp.com.ua](https://cpp.com.ua/standard-library.html) [Стандартна бібліотека C++ - Вікіпедія](https://uk.wikipedia.org/wiki/Стандартна_бібліотека_C%2B%2B) 
+12. [Стандартна бібліотека C++ - SoftGroup](https://www.softgroup.ua/blog/ukrayinskiy-pereklad-standartnoyi-biblioteki-c/) Посилання на посібники з бібліотеки MATH: 
+13. [Бібліотека математичних функцій C++ - cpp.com.ua](https://cpp.com.ua/math.html) 
+14. [Бібліотека математичних функцій C++ - SoftGroup](https://www.softgroup.ua/blog/ukrayinskiy-pereklad-biblioteki-matematichnih-funkciy-c/) 
+15. [Бібліотека математичних функцій C++ - stud.kamgs3.kpi.ua](https://stud.kamgs3.kpi.ua/mod/book/view.php?id=79173&chapterid=39258) 

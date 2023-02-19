@@ -106,3 +106,15 @@ if( file != 0 )
 ## Контрольні запитання
 
 ## Довідники та додаткові матеріали
+
+1. [Working with Files in C++](https://www.geeksforgeeks.org/working-with-files-in-c-c/)
+2. [File Input/Output in C++](https://www.geeksforgeeks.org/file-handling-c-classes/) 
+3. [C++ File Input/Output](https://www.w3schools.com/cpp/cpp_files.asp)
+4. [File Input and Output in C++](https://www.programiz.com/cpp-programming/files-input-output)
+5. [C++ File Input/Output Operations](https://www.javatpoint.com/cpp-file-input-output-operations)
+6. [Робота з файлами в С++](https://prog-cpp.blogspot.com/2012/05/blog-post.html)
+7. [Робота з файлами в C++](https://studassistent.com/cpp-file/)
+8. [Робота з файлами в C++ (стандартна бібліотека)](https://smart-programmer.com.ua/c-file/)
+9. [Робота з файлами в C++](https://tocode.ru/curses/cpp-files)
+10. [Робота з файлами в C++](https://www.ukrprog.com.ua/kursy-c/20-c-files)
+

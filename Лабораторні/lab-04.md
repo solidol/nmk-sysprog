@@ -112,13 +112,19 @@ for (unsigned int count=8; count >= 0; --count)
 ```
 ## Довідники та додаткові матеріали
 
-1. "Цикли у C++" на сайті learncpp.com: https://www.learncpp.com/cpp-tutorial/loops/
-2. "Цикли в C++" на сайті tutorialspoint.com: https://www.tutorialspoint.com/cplusplus/cpp_loop_types.htm
-3. "Цикли у C++" на сайті cplusplus.com: https://www.cplusplus.com/doc/tutorial/control/
-4. "Цикли у програмуванні: for, while, do-while" на сайті codecademy.com: https://www.codecademy.com/learn/learn-c-plus-plus/modules/cpp-loops
-5. "Цикли у C++" на сайті geeksforgeeks.org: https://www.geeksforgeeks.org/loops-in-c-and-cpp/
-6. "Цикли у C++" на сайті w3schools.com: https://www.w3schools.com/cpp/cpp_while_loop.asp
-7. "Цикли у C++" на сайті javatpoint.com: https://www.javatpoint.com/cpp-loops
-8. "Цикли у C++" на сайті guru99.com: https://www.guru99.com/cpp-loop-control-statements.html
-9. "Цикли у C++" на сайті tutorialride.com: https://www.tutorialride.com/cpp/cpp-loops.htm
-
+1. [C++ For Loop](https://www.geeksforgeeks.org/cpp-for-loop/) 
+2. [C++ For Loop Statement: Iteration and Flow Control](https://www.programiz.com/cpp-programming/for-loop) 
+3. [C++ for Loop](https://www.tutorialspoint.com/cplusplus/cpp_for_loop.htm) 
+4. [C++ For Loop](https://www.w3schools.com/cpp/cpp_for_loop.asp) 
+5. [C++ For Loop](https://www.javatpoint.com/cpp-for-loop) 
+6. [For loop in C++ - Examples and Tutorials](https://www.techiedelight.com/for-loop-example-cpp/) 
+7. [C++ For loops - LearnCpp.org](https://www.learn-cpp.org/en/For_loops) 
+8. [C++ For Loop Online Courses](https://www.udemy.com/topic/cpp-for-loop/) 
+9. [Цикли for, do-while, while в C++](https://studopedia.org.ua/1_158260_cykly-for-do-while-while-v-c.html) 
+10. [Цикл for в C++](https://prog-cpp.ru/cikl-for-v-cpp/) 
+11. [Цикл for](https://uk.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_for) 
+12. [Цикл for в C++](https://codelessons.ru/cplusplus/cikl-for-v-c.html) 
+13. [Цикли у мові програмування С++](https://studway.com.ua/cplusplus/cikly-u-c/) 
+14. [Цикл for в C++ - Підручник з програмування Code-Mentor](https://uk.code-mentor.org/cplusplus/for) 
+15. [Цикли в С++ (for, while, do-while)](https://www.bestprog.net/uk/2018/01/23/cykly-v-c-for-while-do-while/) 
+16. [Тема 5.2. Цикли у мові програмування С++](https://studway.com.ua/cplusplus/tema-5-2-cykli-u-c/)

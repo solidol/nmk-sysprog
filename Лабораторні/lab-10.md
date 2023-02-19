@@ -167,3 +167,14 @@ int _tmain(int argc, _TCHAR* argv[]){
 4. Як ініціалізувати структуру?
 
 ## Довідники та додаткові матеріали
+
+1. [Structures in C++ - GeeksforGeeks](https://www.geeksforgeeks.org/structures-in-cpp/)
+2. [C++ Structures - Tutorialspoint](https://www.tutorialspoint.com/cplusplus/cpp_structures.htm)
+3. [Structures in C++ - Programiz](https://www.programiz.com/cpp-programming/structure)
+4. [C++ Structure and Unions - Javatpoint](https://www.javatpoint.com/cpp-structures-and-unions)
+5. [Structures in C++ - cplusplus.com](https://www.cplusplus.com/doc/tutorial/structures/)
+6. [Структури в C++ - Progmeister](https://progmeister.ru/cplusplus-struct)
+7. [C++ структури - Уроки програмування](https://urok-ua.com/cplusplus/c-structures/)
+8. [Структури в C++ - C++ для початківців](https://cppstudio.com/post/139/)
+9. [Структури в C++ - Школа Програмування](https://prog.kiev.ua/program/statti-3/1204-structure-in-c)
+10. [C++ Структури - IT-підготовка](https://itgid.info/cpp/structure) 
