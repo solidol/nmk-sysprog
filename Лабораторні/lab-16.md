@@ -264,6 +264,33 @@ delete p;
 3. Перевірити роботу програми та намалювати блок-схему алгоритму
 
 ```cpp
+#include <iostream>
+using namespace std;
+
+// Оголошення класу Car
+class Car {
+    public:
+        string make;  // марка автомобіля
+        string model;  // модель автомобіля
+        int year;  // рік випуску автомобіля
+
+        void start() {
+            cout << "Starting the " << make << " " << model << "...\n";
+        }
+};
+
+int main() {
+    // Створення об'єкту класу Car з даними про автомобіль
+    Car myCar;
+    myCar.make = "Toyota";
+    myCar.model = "Camry";
+    myCar.year = 2021;
+
+    // Виклик методу start() для об'єкту myCar
+    myCar.start();
+
+    return 0;
+}
 
 ```
 
