@@ -54,18 +54,90 @@
 <table class="tabluc" style="font-size: 0.9em; margin-bottom: 15px;" width="100%">
 <tbody>
 <tr valign="top">
-<td style="text-align: left; padding-left: 25px;">
-`alignas (C++11)`<br>`alignof (C++11)`<br>`and`<br>`and_eq`<br>`asm`<br>`auto`<br>`bitand`<br>`bitor`<br>`bool`<br>`break`<br>`case`<br>`catch`<br>`char`<br>`char16_t (C++11)`<br>`char32_t (C++11)`<br>`class`<br>`compl`<br>`const`<br>`constexpr (C++11)`<br>`const_cast`<br>`continue`
-</td>
-<td style="text-align: left; padding-left: 25px;">
-`decltype (C++11)`<br>`default`<br>`delete`<br>`do`<br>`double`<br>`dynamic_cast`<br>`else`<br>`enum`<br>`explicit`<br>`export`<br>`extern`<br>`false`<br>`float`<br>`for`<br>`friend`<br>`goto`<br>`if`<br>`inline`<br>`int`<br>`long`<br>`mutable`
-</td>
-<td style="text-align: left; padding-left: 25px;">
-`namespace`<br>`new`<br>`noexcept (C++11)`<br>`not`<br>`not_eq`<br>`nullptr (C++11)`<br>`operator`<br>`or`<br>`or_eq`<br>`private`<br>`protected`<br>`public`<br>`register`<br>`reinterpret_cast`<br>`return`<br>`short`<br>`signed`<br>`sizeof`<br>`static`<br>`static_assert (C++11)`<br>`static_cast`
-</td>
-<td style="text-align: left; padding-left: 25px;">
-`struct`<br>`switch`<br>`template`<br>`this`<br>`thread_local (C++11)`<br>`throw`<br>`true`<br>`try`<br>`typedef`<br>`typeid`<br>`typename`<br>`union`<br>`unsigned`<br>`using`<br>`virtual`<br>`void`<br>`volatile`<br>`wchar_t`<br>`while`<br>`xor`<br>`xor_eq`
-</td>
+<td style="text-align: left; padding-left: 25px;">alignas (C++11)<br>
+alignof (C++11)<br>
+and<br>
+and_eq<br>
+asm<br>
+auto<br>
+bitand<br>
+bitor<br>
+bool<br>
+break<br>
+case<br>
+catch<br>
+char<br>
+char16_t (C++11)<br>
+char32_t (C++11)<br>
+class<br>
+compl<br>
+const<br>
+constexpr (C++11)<br>
+const_cast<br>
+continue</td>
+<td style="text-align: left; padding-left: 25px;">decltype (C++11)<br>
+default<br>
+delete<br>
+do<br>
+double<br>
+dynamic_cast<br>
+else<br>
+enum<br>
+explicit<br>
+export<br>
+extern<br>
+false<br>
+float<br>
+for<br>
+friend<br>
+goto<br>
+if<br>
+inline<br>
+int<br>
+long<br>
+mutable</td>
+<td style="text-align: left; padding-left: 25px;">namespace<br>
+new<br>
+noexcept (C++11)<br>
+not<br>
+not_eq<br>
+nullptr (C++11)<br>
+operator<br>
+or<br>
+or_eq<br>
+private<br>
+protected<br>
+public<br>
+register<br>
+reinterpret_cast<br>
+return<br>
+short<br>
+signed<br>
+sizeof<br>
+static<br>
+static_assert (C++11)<br>
+static_cast</td>
+<td style="text-align: left; padding-left: 25px;">struct<br>
+switch<br>
+template<br>
+this<br>
+thread_local (C++11)<br>
+throw<br>
+true<br>
+try<br>
+typedef<br>
+typeid<br>
+typename<br>
+union<br>
+unsigned<br>
+using<br>
+virtual<br>
+void<br>
+volatile<br>
+wchar_t<br>
+while<br>
+xor<br>
+xor_eq</td>
 </tr>
 </tbody>
 </table>
