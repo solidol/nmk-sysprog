@@ -1,0 +1,174 @@
+$CATEGORY: $course$/top/Модуль 2 Рівень 3/OP-06-02
+
+
+::omp 01::Оберіть директиви, що належать OpenMP{
+	~%25%pragma omp for
+	~%25%pragma omp parallel
+	~%25%pragma omp section
+	~%25%pragma omp critical
+}
+
+::omp 02::Оберіть директиви, що належать OpenMP{
+	~%50%pragma omp for
+	~%50%pragma omp parallel
+	~%-40%pragma mpi section
+	~%-40%pragma mpi critical
+}
+
+
+::omp 03::Оберіть директиви, що належать OpenMP{
+	~%50%pragma omp for
+	~%50%pragma omp parallel
+	~%-40%pragma omp while
+	~%-40%pragma omp begin
+}
+
+
+::omp 04::Оберіть директиви, що належать OpenMP{
+	~%50%pragma omp section
+	~%50%pragma omp parallel
+	~%-40%pragma mpi section
+	~%-40%pragma omp while
+}
+
+::omp 05::Оберіть директиви, що належать OpenMP{
+	~%50%pragma omp section
+	~%50%pragma omp critical
+	~%-40%pragma mpi critical
+	~%-40%pragma omp while
+}
+
+
+::omp 06::Функції, що належать OpenMP{
+	~%33.33333%omp_get_wtime()
+	~%33.33333%omp_get_thread_num()
+	~%33.33333%omp_set_num_threads()
+	~%-50%omp_set_thread_num()
+}
+
+::omp 07::Функції, що належать OpenMP{
+	~%33.33333%omp_get_num_threads()
+	~%33.33333%omp_get_thread_num()
+	~%33.33333%omp_set_num_threads()
+	~%-50%omp_set_thread_num()
+}
+
+::omp 08::Функції, що належать OpenMP{
+	~%50%omp_barrier()
+	~%50%omp_get_wtime()
+	~%-40%omp_set_num_thread()
+	~%-40%omp_set_thread_num()
+}
+
+
+::omp 09::Програміст у роботі з OpenMP використовує {
+	~%33.33333%директиви препроцесора
+	~%33.33333%функції бібліотеки
+	~%33.33333%змінні оточення
+	~%-50%параметри паралельних процесів
+}
+
+::omp 10::Програміст у роботі з OpenMP використовує {
+	~%33.33333%директиви препроцесора
+	~%33.33333%функції бібліотеки
+	~%33.33333%змінні оточення
+	~%-50%параметри BIOS
+}
+
+::omp 11::Програміст у роботі з OpenMP використовує {
+	~%50%директиви препроцесора
+	~%50%функції бібліотеки
+	~%-40%параметри паралельних процесів
+	~%-40%параметри BIOS
+}
+
+// question: 10239  name: 2018 06-02-01
+::2018 06-02-01::Функції MPI, що відносяться до загальних{
+	~%25%MPI_Init()
+	~%25%MPI_Finalize()
+	~%25%MPI_Comm_size()
+	~%25%MPI_Comm_rank()
+}
+
+
+// question: 10240  name: 2018 06-02-02
+::2018 06-02-02::Функції MPI, що відносяться до загальних{
+	~%33.33333%MPI_Init()
+	~%33.33333%MPI_Finalize()
+	~%33.33333%MPI_Comm_size()
+	~%-50%MPI_Send()
+}
+
+
+// question: 10241  name: 2018 06-02-03
+::2018 06-02-03::Функції MPI, що відносяться до загальних{
+	~%100%MPI_Init()
+	~%-30%MPI_Recv()
+	~%-30%MPI_Get_count()
+	~%-30%MPI_Send()
+}
+
+
+// question: 10242  name: 2018 06-02-04
+::2018 06-02-04::Функції MPI, що відносяться до обміну{
+	~%-50%MPI_Init()
+	~%33.33333%MPI_Recv()
+	~%33.33333%MPI_Get_count()
+	~%33.33333%MPI_Send()
+}
+
+
+// question: 10243  name: 2018 06-02-05
+::2018 06-02-05::Функції MPI, що відносяться до обміну{
+	~%-30%MPI_Init()
+	~%-30%MPI_Finalize()
+	~%-30%MPI_Comm_size()
+	~%100%MPI_Send()
+}
+
+
+// question: 10244  name: 2018 06-02-06
+::2018 06-02-06::Функції MPI, що відносяться до обміну з блокуванням{
+	~%50%MPI_Send()
+	~%50%MPI_Recv()
+	~%-40%MPI_Init()
+	~%-40%MPI_Isend()
+}
+
+
+// question: 10245  name: 2018 06-02-07
+::2018 06-02-07::Функції MPI, що відносяться до обміну з блокуванням{
+	~%50%MPI_Send()
+	~%50%MPI_Recv()
+	~%-40%MPI_Irecv()
+	~%-40%MPI_Isend()
+}
+
+
+// question: 10246  name: 2018 06-02-08
+::2018 06-02-08::Функції MPI, що відносяться до обміну без блокування{
+	~%-30%MPI_Send()
+	~%-30%MPI_Recv()
+	~%-30%MPI_Init()
+	~%100%MPI_Isend()
+}
+
+
+// question: 10247  name: 2018 06-02-09
+::2018 06-02-09::Функції MPI, що відносяться до обміну без блокування{
+	~%-40%MPI_Send()
+	~%-40%MPI_Recv()
+	~%50%MPI_Irecv()
+	~%50%MPI_Isend()
+}
+
+
+// question: 10248  name: 2018 06-02-10
+::2018 06-02-10::Функції MPI, що відповідають за отримання повідомлень{
+	~%50%MPI_Irecv()
+	~%50%MPI_Recv()
+	~%-40%MPI_Wait()
+	~%-40%MPI_Wtime()
+}
+
+

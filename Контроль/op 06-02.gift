@@ -1,0 +1,182 @@
+$CATEGORY: $course$/top/Модуль 2 Рівень 2/OP-06-01
+
+::omp 01::OpenMP базується на використанні {
+	=паралельних потоків
+	~паралельних процесів
+	~псевдопаралельних процесів
+	~обміні повідомлень між іншими процесами
+}
+
+::omp 02::OpenMP підтримується мовами {
+	=C++
+	~C#
+	~Delphi
+	~Assembler
+}
+
+::omp 03::OpenMP підтримується мовами {
+	=Fortran
+	~C#
+	~Delphi
+	~Assembler
+}
+
+::omp 04::OpenMP підтримується мовами {
+	=C
+	~C#
+	~Delphi
+	~Assembler
+}
+
+::omp 05::OpenMP може розпаралелити цикли {
+	=for
+	~while
+	~do..while
+	~foreach
+}
+
+::omp 06::OpenMP може розпаралелити цикли {
+	=for
+	~while
+	~do..while
+	~if
+}
+
+::omp 07::Директива OpenMP для розпаралелювання циклу {
+	=pragma omp for
+	~pragma omp while
+	~pragma mpi for
+	~pragma mpi if
+}
+
+::omp 08::Директива OpenMP для розпаралелювання циклу {
+	=pragma omp for
+	~pragma omp while
+	~pragma mpi for
+	~pragma omp if
+}
+
+::omp 09::Директива OpenMP для виконання коду тільки в однопоточному режимі {
+	=pragma omp critical
+	~pragma omp section
+	~pragma mpi single
+	~pragma omp single
+}
+
+::omp 10::Директива OpenMP для позначення області з використанням паралельних потоків {
+	=pragma omp parallel
+	~pragma omp section
+	~pragma omp for
+	~pragma omp single
+}
+
+::omp 11::Директива OpenMP для позначення області з використанням паралельних потоків {
+	=pragma omp parallel
+	~pragma omp section
+	~pragma omp for
+	~pragma omp atomic
+}
+
+::omp 12::Функція OpenMP що повертає кількість потоків паралельної області{
+	=omp_get_num_threads()
+	~omp_get_thread_num()
+	~omp_set_num_threads()
+	~omp_set_num_thread()
+}
+
+::omp 13::Функція OpenMP що ідентифікатор потоку паралельної області{
+	=omp_get_thread_num()
+	~omp_get_num_threads()
+	~omp_set_num_threads()
+	~omp_set_num_thread()
+}
+
+::2018 06-01-01::MPI - message passing interface{
+	=бібліотека функцій, що використувується у паралельних обчисленнях базуючись на паралельних процесах
+	~бібліотека функцій, що використувується у паралельних обчисленнях базуючись на паралельних потоках
+	~мовні конструкції С++, що використувується у паралельних обчисленнях базуючись на паралельних процесах
+	~мовні конструкції С++, що використувується у паралельних обчисленнях базуючись на паралельних потоках
+}
+
+
+
+::2018 06-01-02::MPI - message passing interface базується на{
+	=обміні повідомленнями між процесами
+	~обміні повідомленнями між потоками
+	~обміні повідомленнями між обчислювальними ядрами
+	~обміні повідомленнями між блоками пам'яті
+}
+
+
+
+::2018 06-01-03::Ідентифікатор базової групи процесів MPI це - {
+	=MPI_COMM_WORLD
+	~MPI_COMM_GLOBAL
+	~MPI_COMM_GROUP
+	~MPI_GLOB_WORLD
+}
+
+
+
+::2018 06-01-04::Ідентифікатор базової групи процесів MPI це - {
+	=MPI_COMM_WORLD
+	~MPI_COM_GROUP
+	~MPI_GENERAL_GROUP
+	~MPI_COM_WORLD
+}
+
+
+
+::2018 06-01-05::Для початку роботи з MPI необхідно виконати виклик функції{
+	=MPI_Init()
+	~MPI_Start()
+	~MPI_Finalize()
+	~MPI_Parallel()
+}
+
+
+
+::2018 06-01-06::Для початку роботи з MPI необхідно виконати виклик функції{
+	=MPI_Init()
+	~MPI_Set()
+	~MPI_Run()
+	~MPI_Parallel()
+}
+
+
+
+::2018 06-01-07::Для закінчення роботи з MPI необхідно виконати виклик функції{
+	=MPI_Finalize()
+	~MPI_Exit()
+	~MPI_Init()
+	~MPI_Halt()
+}
+
+
+
+::2018 06-01-08::Для закінчення роботи з MPI необхідно виконати виклик функції{
+	=MPI_Finalize()
+	~MPI_Exit()
+	~MPI_Escape()
+	~MPI_End()
+}
+
+
+
+::2018 06-01-09::Для закінчення роботи з MPI необхідно виконати виклик функції{
+	=MPI_Finalize()
+	~MPI_Free()
+	~MPI_Escape()
+	~MPI_Destroy()
+}
+
+
+
+::2018 06-01-10::Атрибути повідомлення MPI це - {
+	=структура
+	~масив
+	~рядок
+	~ціле число
+}
+
+
