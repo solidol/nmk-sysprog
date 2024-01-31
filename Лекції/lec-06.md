@@ -1,6 +1,7 @@
-# Модульність. Бібліотечні функції
+# Декомпозиція коду. Бібліотечні функції
 
 [Перелік лекцій](README.md)
+
 
 ## Стандартна бібліотека C++
 
@@ -12,18 +13,21 @@
 В наступних файлах знаходяться декларації Стандартної бібліотеки C++.
 
 #### Контейнери
-- `<array>` Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер std::array, для масиву з фіксованим розміром.
-- `<bitset>` Реалізує спеціалізований клас контейнеру std::bitset, що є бітовим масивом.
-- `<deque>` Реалізує шаблонний клас контейнер std::deque, що є двобічною чергою.
-- `<forward_list>` Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер std::forward_list, що є Однозв'язним списком.
-- `<list>` Реалізує шаблонний клас контейнер std::list, що є двобічно зв'язним списком.
-- `<map>` Забезпечує шаблони класу контейнера std::map і std::multimap, відсортований асоціативний масив і мультимап.
-- `<queue>` Забезпечує клас адаптеру контейнера std::queue, що є однобічною чергою, і std::priority_queue, що є чергою з пріоритетом.
-- `<set>` Забезпечує шаблони класу контейнера std::set і std::multiset, що реалізує відсортовані асоціативні контейнери або множини.
-- `<stack>` Забезпечує клас адаптеру контейнера std::stack, що реалізує стекову структуру.
-- `<unordered_map>` Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер std::unordered_map і std::unordered_multimap, хеш-таблиці.
-- `<unordered_set>` Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер std::unordered_set і std::unordered_multiset.
-- `<vector>` Шаблонний клас контейнер std::vector, що реалізує динамічний масив.
+| Заголовок          | Опис                                                                      |
+|--------------------|---------------------------------------------------------------------------|
+| <array>            | Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер `std::array` для масиву з фіксованим розміром.                         |
+| <bitset>           | Реалізує спеціалізований клас контейнеру `std::bitset`, що є бітовим масивом.                                                        |
+| <deque>            | Реалізує шаблонний клас контейнер `std::deque`, що є двобічною чергою.                                                            |
+| <forward_list>     | Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер `std::forward_list`, що є Однозв'язним списком.                     |
+| <list>             | Реалізує шаблонний клас контейнер `std::list`, що є двобічно зв'язним списком.                                                    |
+| <map>              | Забезпечує шаблони класу контейнера `std::map` і `std::multimap`, відсортований асоціативний масив і мультимап.                    |
+| <queue>            | Забезпечує клас адаптеру контейнера `std::queue`, що є однобічною чергою, і `std::priority_queue`, що є чергою з пріоритетом.     |
+| <set>              | Забезпечує шаблони класу контейнера `std::set` і `std::multiset`, що реалізує відсортовані асоціативні контейнери або множини.    |
+| <stack>            | Забезпечує клас адаптеру контейнера `std::stack`, що реалізує стекову структуру.                                               |
+| <unordered_map>    | Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер `std::unordered_map` і `std::unordered_multimap`, хеш-таблиці.     |
+| <unordered_set>    | Новий в стандарті C++11 і TR1. Реалізує шаблонний клас контейнер `std::unordered_set` і `std::unordered_multiset`.                 |
+| <vector>           | Шаблонний клас контейнер `std::vector`, що реалізує динамічний масив.                                                          |
+
 
 #### Основні
 - `<algorithm>` Містить визначення багатьох алгоритмів для контейнерів.
@@ -74,153 +78,68 @@
 - `<valarray>` Визначає п'ять шаблонів класів (valarray, slice_array, gslice_array, mask_array, і indirect_array), два класи (slice і gslice), і множину пов'язаних з ними шаблонів функцій для представлення і маніпуляції над масивами значень.
 - `<numeric>` Узагальнені числові операції.
 
-## Бібліотека MATH
+### Бібліотеки С
 
-Мова C++ налічує широкий спектр математичних функцій (табл. 3.5). Для їх використання слід включити в код програми заголовний файл **math.h**.
+До складу сучасних середовищ розробки на С++ входить ряд бібліотек, кодова база яких походить від бібліотек, написаних мовою С.
 
-Таблиця 3.5
+| Бібліотека   | Опис                                        |
+|--------------|---------------------------------------------|
+| <cassert>    | C бібліотека діагностики (заголовок)          |
+| <cctype>     | Функції обробки символів (заголовок)         |
+| <cerrno>     | C помилки (заголовок)                        |
+| <cfloat>     | Характеристики типів з рухомою комою (заголовок)|
+| <ciso646>    | Альтернативні написання операторів ISO 646 (заголовок)|
+| <climits>    | Розміри цілих типів (заголовок)              |
+| <clocale>    | C бібліотека локалізації (заголовок)         |
+| <cmath>      | C бібліотека числових операцій (заголовок)   |
+| <csetjmp>    | Нелокальні стрибки (заголовок)               |
+| <csignal>    | C бібліотека обробки сигналів (заголовок)   |
+| <cstdarg>    | Обробка змінної кількості аргументів (заголовок)|
+| <cstdbool>   | Булевий тип (заголовок)                     |
+| <cstddef>    | Стандартні визначення (заголовок)           |
+| <cstdint>    | Цілочисельні типи (заголовок)               |
+| <cstdio>     | C бібліотека для введення/виведення (заголовок)|
+| <cstdlib>    | C Стандартна Загальна Бібліотека (заголовок)|
+| <cstring>    | Рядкові функції (заголовок)                 |
+| <ctime>      | C бібліотека часу (заголовок)               |
+| <cuchar>     | Символи Unicode (заголовок)                 |
+| <cwchar>     | Широкі символи (заголовок)                  |
+| <cwctype>    | Тип широких символів (заголовок)            |
 
-**Математичні функції (**заголовний файл **math.h)**
 
-<table style="height: 392px; margin-left: auto; margin-right: auto;" border="2" width="611"> 
-<tbody> 
-<tr> 
-<td width="262"> 
-**Прототип функції**
+## Бібліотека CMATH
 
-</td> 
-<td width="262">**Ім’я**</td> 
-<td width="332"> 
-**Призначення**
+Бібліотека CMATH налічує широкий спектр математичних функцій. Для їх використання слід включити в код програми заголовний файл **cmath**.
 
-</td> 
-</tr> 
-<tr> 
-<td width="262">Double sin (double _х);</td> 
-<td width="262">**sin (x)**</td> 
-<td width="332">синус x (в радіанах) — **sin x**</td> 
-</tr> 
-<tr> 
-<td width="262">Double cos (double _x);</td> 
-<td width="262">**cos (x)**</td> 
-<td width="332">косинус x (в радіанах) — **cos х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double tan (double _x);</td> 
-<td width="262">**tan (x)**</td> 
-<td width="332">тангенс х (в радіанах) — **tg х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double asin (double _x);</td> 
-<td width="262">**asin (x)**</td> 
-<td width="332">арксинус х — **arcsin х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double acos (double _x);</td> 
-<td width="262">**acos (x)**</td> 
-<td width="332">арккосинус х — **arcos х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double atan (double _x);</td> 
-<td width="262">**atan (x)**</td> 
-<td width="332">арктангенс х — **arctg х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double atan2 (double _y, Double_x);</td> 
-<td width="262">**atan2 (y,x)**</td> 
-<td width="332">арктангенс у/х — **arctg (у/х)**</td> 
-</tr> 
-<tr> 
-<td width="262">Double sinh (double _x);</td> 
-<td width="262">**sinh (x)**</td> 
-<td width="332">синус гіперболічний х — **sh х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double cosh (double _x);</td> 
-<td width="262">**cosh (x)**</td> 
-<td width="332">косинус гіперболічний х — **ch х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double tanh (double _x);</td> 
-<td width="262">**tanh (x)**</td> 
-<td width="332">тангенс гіперболічний х — **th х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double log (double _x);</td> 
-<td width="262">**log (x)**</td> 
-<td width="332">натуральний логарифм х — **ln х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double log10 (double _x);</td> 
-<td width="262">**log10 (x)**</td> 
-<td width="332">десятковий логарифм х — **log х**</td> 
-</tr> 
-<tr> 
-<td width="262">Double exp (double _x);</td> 
-<td width="262">**exp (x)**</td> 
-<td width="332">піднесення е до степеня х — **е****<sup>х</sup>**</td> 
-</tr> 
-<tr> 
-<td width="262">Double pow (double _x, double_y);</td> 
-<td width="262">**pow (x,y)**</td> 
-<td width="332">піднесення х до степеня у — **х****<sup>у</sup>**</td> 
-</tr> 
-<tr> 
-<td width="262">Double pow 10 (int _p)</td> 
-<td width="262">**pow10 (p)**</td> 
-<td width="332">повертає **10****<sup>р</sup>**</td> 
-</tr> 
-<tr> 
-<td width="257">Double sqrt (double _х);</td> 
-<td style="width: 257px; text-align: center;" width="257">**sqrt (x)**</td> 
-<td width="331">корінь iз x, x > 0</td> 
-</tr> 
-<tr> 
-<td width="257">Double hypot (double_x, double_y);</td> 
-<td style="width: 257px; text-align: center;" width="257">**hypot (x,y)**</td> 
-<td width="331">корінь із (х<sup>2</sup>+у<sup>2</sup>)</td> 
-</tr> 
-<tr> 
-<td width="257">Double fabs (double __x);</td> 
-<td style="width: 257px; text-align: center;" width="257">**fabs (x)**</td> 
-<td width="331">абсолютне значення х — |х| типу **double**</td> 
-</tr> 
-<tr> 
-<td width="257">int abs (int _x);</td> 
-<td style="width: 257px; text-align: center;" width="257">**abs (x)**</td> 
-<td width="331">абсолютне значення х — |х| типу **int**</td> 
-</tr> 
-<tr> 
-<td width="257">long labs (long _x);</td> 
-<td style="width: 257px; text-align: center;" width="257">**labs (x)**</td> 
-<td width="331">абсолютне значення х — |х| типу **long**</td> 
-</tr> 
-<tr> 
-<td width="257">Double fmod (double __x, double_y);</td> 
-<td style="width: 257px; text-align: center;" width="257">**fmod (x,y)**</td> 
-<td width="331">залишок від ділення х на у</td> 
-</tr> 
-<tr> 
-<td width="257">Double ceil (double __x);</td> 
-<td style="width: 257px; text-align: center;" width="257">**ceil (x)**</td> 
-<td width="331">округлення до більшого</td> 
-</tr> 
-<tr> 
-<td width="257">Double floor (double _x);</td> 
-<td style="width: 257px; text-align: center;" width="257">**floor (x)**</td> 
-<td width="331">повертає найближче ціле, не більше за х</td> 
-</tr> 
-<tr> 
-<td width="257">Double modf (double _x, double);</td> 
-<td style="width: 257px; text-align: center;" width="257">**modf(x,&p)**</td> 
-<td width="331">виділяє цілу й дробову частинні числа</td> 
-</tr> 
-<tr> 
-<td width="257">Double atof(const char* _s);</td> 
-<td style="width: 257px; text-align: center;" width="257">**atof (s)**</td> 
-<td width="331">перетворює рядок символів  
-у число з плаваючою крапкою</td> 
-</tr> 
-</tbody> 
-</table> 
-Визначені константи: **М_РІ = 3.1415… — пи, М_Е = 2.71828… — е,** **M_SQRT2 = 1.4142… — sqrt(2), M_LN2 = 0.6931… — ln****(2)** тощо.
+
+**Математичні функції бібліотеки CMATH**
+
+| **Прототип функції** | **Ім’я** | **Призначення** |
+|---|---|---|
+| Double sin (double _х); | sin (x) | синус x (в радіанах) — sin x |
+| Double cos (double _x); | cos (x) | косинус x (в радіанах) — cos х |
+| Double tan (double _x); | tan (x) | тангенс х (в радіанах) — tg х |
+| Double asin (double _x); | asin (x) | арксинус х — arcsin х |
+| Double acos (double _x); | acos (x) | арккосинус х — arcos х |
+| Double atan (double _x); | atan (x) | арктангенс х — arctg х |
+| Double atan2 (double _y, Double_x); | atan2 (y,x) | арктангенс у/х — arctg (у/х) |
+| Double sinh (double _x); | sinh (x) | синус гіперболічний х — sh х |
+| Double cosh (double _x); | cosh (x) | косинус гіперболічний х — ch х |
+| Double tanh (double _x); | tanh (x) | тангенс гіперболічний х — th х |
+| Double log (double _x); | log (x) | натуральний логарифм х — ln х |
+| Double log10 (double _x); | log10 (x) | десятковий логарифм х — log х |
+| Double exp (double _x); | exp (x) | піднесення е до степеня х — ех |
+| Double pow (double _x, double_y); | pow (x,y) | піднесення х до степеня у — ху |
+| Double pow 10 (int _p) | pow10 (p) | повертає 10р |
+| Double sqrt (double _х); | sqrt (x) | корінь iз x, x > 0 |
+| Double hypot (double_x, double_y); | hypot (x,y) | корінь із (х2+у2) |
+| Double fabs (double __x); | fabs (x) | абсолютне значення х — \|х\| типу double |
+| int abs (int _x); | abs (x) | абсолютне значення х — \|х\| типу int |
+| long labs (long _x); | labs (x) | абсолютне значення х — \|х\| типу long |
+| Double fmod (double __x, double_y); | fmod (x,y) | залишок від ділення х на у |
+| Double ceil (double __x); | ceil (x) | округлення до більшого |
+| Double floor (double _x); | floor (x) | повертає найближче ціле, не більше за х |
+| Double modf (double _x, double); | modf(x,&p) | виділяє цілу й дробову частинні числа |
+| Double atof(const char* _s); | atof (s) | перетворює рядок символів у число з плаваючою крапкою |
+
+Визначені константи: **М_РІ = 3.1415… - П , М_Е = 2.71828… — е, M_SQRT2 = 1.4142… — sqrt(2), M_LN2 = 0.6931… — ln(2)** тощо.
