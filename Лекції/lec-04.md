@@ -9,7 +9,7 @@
 Операції поділяються на:
 
 * **унарні** або **одномісні** — **&, *, -, +, ~, !, ++, –****-, sizeof****;**
-* **бінарні** або **двомісні** — **+, -,** ***, /, %,** **<<, >>, &, :, ^, <, >, <=, ==, >=, !=, &&, ||, =,*****=,** **/=, %=, +=, -=, <<=, >>=, &=, |=, ^=****, ., ->, ,,** **(), [];**
+* **бінарні** або **двомісні** — **+, -,** ***, /, %,** **<<, >>, &, :, ^, <, >, <=, ==, >=, !=, &&,  | |, =,*****=,** **/=, %=, +=, -=, <<=, >>=, &=, |=, ^=****, ., ->, ,,** **(), [];**
 * умовну **триарну** або **тримісну** операцію — **?:** **.**
 
 Таблиця 3.4
@@ -19,11 +19,11 @@
 | **Приорітет** | **Оператор** | **Опис** | **Напрям виконання (асоціативність)** |
 | --------------------------------------------------------------- | --- | --- | --- |
 | 1 | :: | Scope resolution | Left-to-right → |
-| 2 | a++ a-- | Suffix/postfix increment and decrement ||
-| 2 | type() type{}| Functional cast ||
-| 2 | a()| Function call ||
-| 2 | a[]| Subscript||
-| 2 | . -&gt;| Member access ||
+| 2 | a++ a-- | Suffix/postfix increment and decrement  | |
+| 2 | type() type{}| Functional cast  | |
+| 2 | a()| Function call  | |
+| 2 | a[]| Subscript | |
+| 2 | . -&gt;| Member access  | |
 | 3 | ++a --a | Prefix increment and decrement | Right-to-left ← |
 | 3 | +a -a | Unary plus and minus | |
 | 3 | ! ~ | Logical NOT and bitwise NOT| |
@@ -35,24 +35,24 @@
 | 3 | new new[] | Dynamic memory allocation | |
 | 3 | delete delete[] | Dynamic memory deallocation | |
 | 4 | .* -&gt;* | Pointer-to-member | Left-to-right → |
-| 5 | a*b a/b a%b | Multiplication, division, and remainder ||
+| 5 | a*b a/b a%b | Multiplication, division, and remainder  | |
 | 6 | a+b a-b | Addition and subtraction | |
-| 8 | &lt;=&gt; | Three-way comparison operator (since C++20) ||
-| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively ||
-| 10 | == != | For equality operators = and ≠ respectively ||
-| 11 | a&amp;b | Bitwise AND ||
-| 12 | ^ | Bitwise XOR (exclusive or) ||
-| 13 | \| | Bitwise OR (inclusive or) ||
-| 14 | &amp;&amp; | Logical AND ||
-| 15 | \|\| | Logical OR ||
+| 8 | &lt;=&gt; | Three-way comparison operator (since C++20)  | |
+| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively  | |
+| 10 | == != | For equality operators = and ≠ respectively  | |
+| 11 | a&amp;b | Bitwise AND  | |
+| 12 | ^ | Bitwise XOR (exclusive or)  | |
+| 13 | \| | Bitwise OR (inclusive or)  | |
+| 14 | &amp;&amp; | Logical AND  | |
+| 15 | \|\| | Logical OR  | |
 | 16 | a?b:c | Ternary conditional[note 2] | Right-to-left ← |
-| 16 | throw | throw operator ||
-| 16 | co_yield | yield-expression (C++20) ||
-| 16 | = | Direct assignment (provided by default for C++ classes) ||
-| 16 | += -= | Compound assignment by sum and difference ||
-| 16 | *= /= %= | Compound assignment by product, quotient, and remainder ||
-| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift ||
-| 16 | &amp;= ^= | = | Compound assignment by bitwise AND, XOR, and OR ||
+| 16 | throw | throw operator  | |
+| 16 | co_yield | yield-expression (C++20)  | |
+| 16 | = | Direct assignment (provided by default for C++ classes)  | |
+| 16 | += -= | Compound assignment by sum and difference  | |
+| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  | |
+| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  | |
+| 16 | &amp;= ^= | = | Compound assignment by bitwise AND, XOR, and OR  | |
 | 17 | , | Comma | Left-to-right → |
 
 
@@ -116,10 +116,10 @@ g%=9; //g=g%9;.
 **Логічні операції** оперують з цілими розмірами або з розміра­ми, які можна перетворити на цілі. Обчислення зупиняється, які тільки визначиться, чи є вираз правдивим («істина») або помил­ковим («неправда»). При цьому, як і для операцій відношення, значенням «істина» відповідає 1, а значенням «неправда» — 0.
 
 && — логічне **«AND»** (кон’юнкція); 
-|| — логічне **«OR»** (диз’юнкція); 
+ | | — логічне **«OR»** (диз’юнкція); 
 != — логічне **«NOT»** (заперечення).
 
-Результат операції «&&» є «істина» **(1)**, якщо обидва її oпe­ранди правдиві (не рівні 0). Результат операції «||» — «істина» **(1)**, якщо хоча б один з її операндів є «істина». Логічне заперечення «!=» перетворює свій операнд на «істину» **(1)**, якщо він дорівнює **0**, і на «неправду» **(0)**, якщо він не дорівнює **0**.
+Результат операції «&&» є «істина» **(1)**, якщо обидва її oпe­ранди правдиві (не рівні 0). Результат операції « | |» — «істина» **(1)**, якщо хоча б один з її операндів є «істина». Логічне заперечення «!=» перетворює свій операнд на «істину» **(1)**, якщо він дорівнює **0**, і на «неправду» **(0)**, якщо він не дорівнює **0**.
 
 З використанням логічних операцій та операцій відношення записуються різні умовні вирази, наприклад, умова **3 < х < 5** ма­тиме вигляд: **х > 3 && х < 5**.
 
