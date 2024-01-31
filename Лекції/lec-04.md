@@ -19,40 +19,40 @@
 | **Приорітет** | **Оператор** | **Опис** | **Напрям виконання (асоціативність)** |
 | --------------------------------------------------------------- | --- | --- | --- |
 | 1 | :: | Scope resolution | Left-to-right → |
-| 2 | a++ a-- | Suffix/postfix increment and decrement  | |
-| 2 | type() type{}| Functional cast  | |
-| 2 | a()| Function call  | |
-| 2 | a[]| Subscript | |
-| 2 | . -&gt;| Member access  | |
+| 2 | a++ a-- | Suffix/postfix increment and decrement  | Left-to-right → |
+| 2 | type() type{}| Functional cast  | Left-to-right → |
+| 2 | a()| Function call  | Left-to-right → |
+| 2 | a[]| Subscript | Left-to-right → |
+| 2 | . -&gt;| Member access  | Left-to-right → |
 | 3 | ++a --a | Prefix increment and decrement | Right-to-left ← |
-| 3 | +a -a | Unary plus and minus | |
-| 3 | ! ~ | Logical NOT and bitwise NOT| |
-| 3 | (type) | C-style cast | |
-| 3 | *a | Indirection (dereference) | |
-| 3 | &amp;a | Address-of | |
-| 3 | sizeof | Size-of[note 1] | |
-| 3 | co_await | await-expression (C++20) | |
-| 3 | new new[] | Dynamic memory allocation | |
-| 3 | delete delete[] | Dynamic memory deallocation | |
+| 3 | +a -a | Unary plus and minus | Right-to-left ← |
+| 3 | ! ~ | Logical NOT and bitwise NOT| Right-to-left ← |
+| 3 | (type) | C-style cast | Right-to-left ← |
+| 3 | *a | Indirection (dereference) | Right-to-left ← |
+| 3 | &amp;a | Address-of | Right-to-left ← |
+| 3 | sizeof | Size-of[note 1] | Right-to-left ← |
+| 3 | co_await | await-expression (C++20) | Right-to-left ← |
+| 3 | new new[] | Dynamic memory allocation | Right-to-left ← |
+| 3 | delete delete[] | Dynamic memory deallocation | Right-to-left ← |
 | 4 | .* -&gt;* | Pointer-to-member | Left-to-right → |
-| 5 | a*b a/b a%b | Multiplication, division, and remainder  | |
-| 6 | a+b a-b | Addition and subtraction | |
-| 8 | &lt;=&gt; | Three-way comparison operator (since C++20)  | |
-| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively  | |
-| 10 | == != | For equality operators = and ≠ respectively  | |
-| 11 | a&amp;b | Bitwise AND  | |
-| 12 | ^ | Bitwise XOR (exclusive or)  | |
-| 13 | \| | Bitwise OR (inclusive or)  | |
-| 14 | &amp;&amp; | Logical AND  | |
-| 15 | \|\| | Logical OR  | |
+| 5 | a*b a/b a%b | Multiplication, division, and remainder  | Left-to-right → |
+| 6 | a+b a-b | Addition and subtraction | Left-to-right → |
+| 8 | &lt;=&gt; | Three-way comparison operator (since C++20)  | Left-to-right → |
+| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively  | Left-to-right → |
+| 10 | == != | For equality operators = and ≠ respectively  | Left-to-right → |
+| 11 | a&amp;b | Bitwise AND  | Left-to-right → |
+| 12 | ^ | Bitwise XOR (exclusive or)  | Left-to-right → |
+| 13 | \| | Bitwise OR (inclusive or)  | Left-to-right → |
+| 14 | &amp;&amp; | Logical AND  | Left-to-right → |
+| 15 | \|\| | Logical OR  | Left-to-right → |
 | 16 | a?b:c | Ternary conditional[note 2] | Right-to-left ← |
-| 16 | throw | throw operator  | |
-| 16 | co_yield | yield-expression (C++20)  | |
-| 16 | = | Direct assignment (provided by default for C++ classes)  | |
-| 16 | += -= | Compound assignment by sum and difference  | |
-| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  | |
-| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  | |
-| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  | |
+| 16 | throw | throw operator  | Right-to-left ← |
+| 16 | co_yield | yield-expression (C++20)  | Right-to-left ← |
+| 16 | = | Direct assignment (provided by default for C++ classes)  | Right-to-left ← |
+| 16 | += -= | Compound assignment by sum and difference  | Right-to-left ← |
+| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  | Right-to-left ← |
+| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  | Right-to-left ← |
+| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  | Right-to-left ← |
 | 17 | , | Comma | Left-to-right → |
 
 
