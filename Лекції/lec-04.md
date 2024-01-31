@@ -52,7 +52,7 @@
 | 16 | += -= | Compound assignment by sum and difference  | |
 | 16 | *= /= %= | Compound assignment by product, quotient, and remainder  | |
 | 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  | |
-| 16 | &amp;= ^= | = | Compound assignment by bitwise AND, XOR, and OR  | |
+| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  | |
 | 17 | , | Comma | Left-to-right → |
 
 
