@@ -18,54 +18,54 @@
 
 | **Приорітет** | **Оператор** | **Опис** | **Напрям виконання (асоціативність)** |
 | --------------------------------------------------------------- | --- | --- | --- |
-| 1 | :: | Scope resolution | Left-to-right → |
-| 2 | a++ a-- | Suffix/postfix increment and decrement  | Left-to-right → |
-| 2 | type() type{}| Functional cast  | Left-to-right → |
-| 2 | a()| Function call  | Left-to-right → |
-| 2 | a[]| Subscript | Left-to-right → |
-| 2 | . -&gt;| Member access  | Left-to-right → |
-| 3 | ++a --a | Prefix increment and decrement | Right-to-left ← |
-| 3 | +a -a | Unary plus and minus | Right-to-left ← |
-| 3 | ! ~ | Logical NOT and bitwise NOT| Right-to-left ← |
-| 3 | (type) | C-style cast | Right-to-left ← |
-| 3 | *a | Indirection (dereference) | Right-to-left ← |
-| 3 | &amp;a | Address-of | Right-to-left ← |
-| 3 | sizeof | Size-of[note 1] | Right-to-left ← |
-| 3 | co_await | await-expression (C++20) | Right-to-left ← |
-| 3 | new new[] | Dynamic memory allocation | Right-to-left ← |
-| 3 | delete delete[] | Dynamic memory deallocation | Right-to-left ← |
-| 4 | .* -&gt;* | Pointer-to-member | Left-to-right → |
-| 5 | a*b a/b a%b | Multiplication, division, and remainder  | Left-to-right → |
-| 6 | a+b a-b | Addition and subtraction | Left-to-right → |
-| 8 | &lt;=&gt; | Three-way comparison operator (since C++20)  | Left-to-right → |
-| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively  | Left-to-right → |
-| 10 | == != | For equality operators = and ≠ respectively  | Left-to-right → |
-| 11 | a&amp;b | Bitwise AND  | Left-to-right → |
-| 12 | ^ | Bitwise XOR (exclusive or)  | Left-to-right → |
-| 13 | \| | Bitwise OR (inclusive or)  | Left-to-right → |
-| 14 | &amp;&amp; | Logical AND  | Left-to-right → |
-| 15 | \|\| | Logical OR  | Left-to-right → |
-| 16 | a?b:c | Ternary conditional[note 2] | Right-to-left ← |
-| 16 | throw | throw operator  | Right-to-left ← |
-| 16 | co_yield | yield-expression (C++20)  | Right-to-left ← |
-| 16 | = | Direct assignment (provided by default for C++ classes)  | Right-to-left ← |
-| 16 | += -= | Compound assignment by sum and difference  | Right-to-left ← |
-| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  | Right-to-left ← |
-| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  | Right-to-left ← |
-| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  | Right-to-left ← |
-| 17 | , | Comma | Left-to-right → |
+| 1 | :: | Scope resolution | Л → П |
+| 2 | a++ a-- | Suffix/postfix increment and decrement  | Л → П |
+| 2 | type() type{}| Functional cast  | Л → П |
+| 2 | a()| Function call  | Л → П |
+| 2 | a[]| Subscript | Л → П |
+| 2 | . -&gt;| Member access  | Л → П |
+| 3 | ++a --a | Prefix increment and decrement |  П ← Л |
+| 3 | +a -a | Unary plus and minus |  П ← Л |
+| 3 | ! ~ | Logical NOT and bitwise NOT|  П ← Л |
+| 3 | (type) | C-style cast |  П ← Л |
+| 3 | *a | Indirection (dereference) |  П ← Л |
+| 3 | &amp;a | Address-of |  П ← Л |
+| 3 | sizeof | Size-of[note 1] |  П ← Л |
+| 3 | co_await | await-expression (C++20) |  П ← Л |
+| 3 | new new[] | Dynamic memory allocation |  П ← Л |
+| 3 | delete delete[] | Dynamic memory deallocation |  П ← Л |
+| 4 | .* -&gt;* | Pointer-to-member | Л → П |
+| 5 | a*b a/b a%b | Multiplication, division, and remainder  | Л → П |
+| 6 | a+b a-b | Addition and subtraction | Л → П |
+| 8 | &lt;=&gt; | Three-way comparison operator (since C++20)  | Л → П |
+| 9 | &lt; &lt;= &gt; &gt;= | For relational operators &lt; and ≤ and &gt; and ≥ respectively  | Л → П |
+| 10 | == != | For equality operators = and ≠ respectively  | Л → П |
+| 11 | a&amp;b | Bitwise AND  | Л → П |
+| 12 | ^ | Bitwise XOR (exclusive or)  | Л → П |
+| 13 | \| | Bitwise OR (inclusive or)  | Л → П |
+| 14 | &amp;&amp; | Logical AND  | Л → П |
+| 15 | \|\| | Logical OR  | Л → П |
+| 16 | a?b:c | Ternary conditional[note 2] |  П ← Л |
+| 16 | throw | throw operator  |  П ← Л |
+| 16 | co_yield | yield-expression (C++20)  |  П ← Л |
+| 16 | = | Direct assignment (provided by default for C++ classes)  |  П ← Л |
+| 16 | += -= | Compound assignment by sum and difference  |  П ← Л |
+| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  |  П ← Л |
+| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  |  П ← Л |
+| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  |  П ← Л |
+| 17 | , | Comma | Л → П |
 
 
 Порядок застосування операції визначається **пріоритетом операції** (яка операція виконується раніше, а яка пізніше) та **асоціативністю** (виконується зліва направо або справа на ліво). У першу чергу реалізуються операції з найвищим пріо­ритетом.
 
-У табл. 3.4 літерою **«Л»** позначено величину, що стоїть ліво­руч від знака операції, літерою **«П»** — величину, яка розташо­вана праворуч від знака операції, а символом «->» напрямок виконання операції. Розглянемо основні операції.
+
 
 **Арифметичні операції:**
 
 **+** — додає величину **П** до **Л**; 
 **–**— віднімає **П** із **Л**; 
 **–** — унарна операція зміни знака величини **П**; 
-***** — множення **П** і **Л**; 
+**\*** — множення **П** і **Л**; 
 **/** — ділення **Л** на **П**; 
 **%** — залишок від ділення величини **Л** на величину **П** (для цілих чисел), наприклад, якщо **int g** **= 12;**, то операція **g = g** **% 9;** надасть результат: **g = 3;** 
 **++** — унарна операція інкремент. Якщо змінна розташовується праворуч від знака операції (префіксна форма), то значення збільшується на 1 до використання. Якщо ж змін­на знаходиться ліворуч від знака операції (постфіксна форма), то її значення збільшується на 1 після використання, наприклад:
@@ -105,8 +105,8 @@ g%=9; //g=g%9;.
 < — менше; 
 <= — менше або дорівнює (не перевищує); 
 == — дорівнює; 
-> — більше; 
->= — більше або дорівнює (не менше); 
+\> — більше; 
+\>= — більше або дорівнює (не менше); 
 != — не дорівнює.
 
 У мові C++ «істина» — це ненульова величина, «неправ­да» — це нуль **(0)**. У більшості випадків одиниця **(1)** викориc­товується як ненульове значення.
@@ -129,7 +129,7 @@ g%=9; //g=g%9;.
 | — операція бітового додавання (диз’юнкція); 
 ^ — додавання за модулем 2; 
 ~ — інвертування; 
->> — зсув праворуч; 
+\>\> — зсув праворуч; 
 << — зсув ліворуч.
 
 **Змінна-покажчик** зберігає значення, що є адресою об’єкта в пам’яті комп’ютера. Через покажчик можна звертатися до об’єкта.
@@ -149,4 +149,34 @@ g%=9; //g=g%9;.
 ```
 
 тут, якщо результат обчислення першого операнда **(вираз1)** не дорівнює **0** («істина»), то результатом операції буде значення дру­гого операнда **(вираз2)**, інакше — третього операнда **(виразЗ)**. Наприклад, знаходження найбільшої з двох величин **а** і **b**, мож­ливо здійснити операцією: **max = (b > а)? b** **: а;**.
+
+## Вирази
+Вираз являє собою об'єднання операцій і операндів. Нагадаємо, що операндом називається те, над чим виконується операція. Найпростіший вираз складається з одного операнда. Спираючись на це поняття виразу, ми можемо будувати більш складні конструкції. Наведемо кілька виразів:
+
+```cpp
+100;
+1904+100;
+a*(c-d);
+x=0;
+x=y++;
+x>3;
+```
+
+Виразами називаються компоненти програми, складені з використанням операцій, литералов, констант, змінних (включаючи масиви, структури та об'єднання) і викликів функцій. Порядок обчислення виразів визначено лише вимогами відповідності семантиці операторів і дотримання правил пріоритету і порядку виконання операцій. При виконанні цих вимог компілятор вільний у виборі порядку обчислення виразу, навіть якщо обчислення підвиражень може призвести до побічних ефектів.
+
+На відміну від більшості інших мов, в мові Сі для завдання певного порядку обчислення виразу недостатньо тільки відповідної розстановки дужок, так як компілятор може довільно змінювати порядок вираження, що включають асоціативні і комутативні оператори (*, +, |, ^) навіть при наявності дужок. Для завдання бажаного порядку виконання виразу потрібно використовувати додаткові привласнення, якщо потрібно, з використанням тимчасових змінних.
+
+Необхідно з обережністю використовувати вирази, при обчисленні яких можливі побічні результати, так як результати обчислення таких виразів часто проявляються не відразу і, крім того, залежать від використовуваного компілятора. Наприклад, в результаті обчислення операторів присвоювання
+
+```cpp
+j=3;
+i=(k=j+1)+(j=5);
+```
+
+значення змінної i дорівнюватиме 9 або 11 в залежності від того, який підвираз другої операції буде обчислено першим. Таким чином, з використанням різних компіляторів можна отримати різні результати.
+
+### Найпрстіші вирази
+Найпростішими виразами називаються вирази, сформовані з використанням констант типів int, char і enum, операції sizeof, унарних операторів - і ~, бінарних операторів + * /% & | ^ << >> = =! = <> <=> =  і тернарної операції?:.
+
+Найпростіші вирази використовуються в операторі switch, в ініціалізаторах кордонів масивів і в операторі препроцесора #if.
 
