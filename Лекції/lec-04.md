@@ -24,16 +24,16 @@
 | 2 | a()| Function call  | Л → П |
 | 2 | a[]| Subscript | Л → П |
 | 2 | . -&gt;| Member access  | Л → П |
-| 3 | ++a --a | Prefix increment and decrement |  П ← Л |
-| 3 | +a -a | Unary plus and minus |  П ← Л |
-| 3 | ! ~ | Logical NOT and bitwise NOT|  П ← Л |
-| 3 | (type) | C-style cast |  П ← Л |
-| 3 | *a | Indirection (dereference) |  П ← Л |
-| 3 | &amp;a | Address-of |  П ← Л |
-| 3 | sizeof | Size-of[note 1] |  П ← Л |
-| 3 | co_await | await-expression (C++20) |  П ← Л |
-| 3 | new new[] | Dynamic memory allocation |  П ← Л |
-| 3 | delete delete[] | Dynamic memory deallocation |  П ← Л |
+| 3 | ++a --a | Prefix increment and decrement |  Л ← П |
+| 3 | +a -a | Unary plus and minus |  Л ← П |
+| 3 | ! ~ | Logical NOT and bitwise NOT|  Л ← П |
+| 3 | (type) | C-style cast |  Л ← П |
+| 3 | *a | Indirection (dereference) |  Л ← П |
+| 3 | &amp;a | Address-of |  Л ← П |
+| 3 | sizeof | Size-of[note 1] |  Л ← П |
+| 3 | co_await | await-expression (C++20) |  Л ← П |
+| 3 | new new[] | Dynamic memory allocation |  Л ← П |
+| 3 | delete delete[] | Dynamic memory deallocation |  Л ← П |
 | 4 | .* -&gt;* | Pointer-to-member | Л → П |
 | 5 | a*b a/b a%b | Multiplication, division, and remainder  | Л → П |
 | 6 | a+b a-b | Addition and subtraction | Л → П |
@@ -45,14 +45,14 @@
 | 13 | \| | Bitwise OR (inclusive or)  | Л → П |
 | 14 | &amp;&amp; | Logical AND  | Л → П |
 | 15 | \|\| | Logical OR  | Л → П |
-| 16 | a?b:c | Ternary conditional[note 2] |  П ← Л |
-| 16 | throw | throw operator  |  П ← Л |
-| 16 | co_yield | yield-expression (C++20)  |  П ← Л |
-| 16 | = | Direct assignment (provided by default for C++ classes)  |  П ← Л |
-| 16 | += -= | Compound assignment by sum and difference  |  П ← Л |
-| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  |  П ← Л |
-| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  |  П ← Л |
-| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  |  П ← Л |
+| 16 | a?b:c | Ternary conditional[note 2] |  Л ← П |
+| 16 | throw | throw operator  |  Л ← П |
+| 16 | co_yield | yield-expression (C++20)  |  Л ← П |
+| 16 | = | Direct assignment (provided by default for C++ classes)  |  Л ← П |
+| 16 | += -= | Compound assignment by sum and difference  |  Л ← П |
+| 16 | *= /= %= | Compound assignment by product, quotient, and remainder  |  Л ← П |
+| 16 | &lt;&lt;= &gt;&gt;= | Compound assignment by bitwise left shift and right shift  |  Л ← П |
+| 16 | &amp;= ^= \|= | Compound assignment by bitwise AND, XOR, and OR  |  Л ← П |
 | 17 | , | Comma | Л → П |
 
 
