@@ -85,7 +85,7 @@ int main()
     char szReadBuffer[256] = "";
 
     // Відкриття файлу
-    hFile = CreateFile("c:\\test.txt", GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+    hFile = CreateFile(L"c:\\test.txt", GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
     if (hFile == INVALID_HANDLE_VALUE)
     {
         cout << "Помилка відкриття файлу!" << endl;
@@ -106,7 +106,7 @@ int main()
     CloseHandle(hFile);
 
     // Відкриття файлу для читання
-    hFile = CreateFile("c:\\test.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+    hFile = CreateFile(L"c:\\test.txt", GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
     if (hFile == INVALID_HANDLE_VALUE)
     {
         cout << "Помилка відкриття файлу!" << endl;
