@@ -16,7 +16,7 @@
 #### Створення статичної бібліотеки
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\static_library.cpp
+// examples\static_library.cpp
 int add(int a, int b) {
     return a + b;
 }
@@ -25,7 +25,7 @@ int add(int a, int b) {
 #### Використання статичної бібліотеки в програмі
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\use_static_library.cpp
+// examples\use_static_library.cpp
 #include <iostream>
 
 extern int add(int a, int b);
@@ -62,7 +62,7 @@ int main() {
 ### Приклад встановлення бібліотеки в Windows
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\install_library_windows.cpp
+// examples\install_library_windows.cpp
 #include <iostream>
 #include <windows.h>
 
@@ -76,7 +76,7 @@ int main() {
 ### Приклад встановлення бібліотеки в Linux
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\install_library_linux.cpp
+// examples\install_library_linux.cpp
 #include <iostream>
 
 int main() {
@@ -99,7 +99,7 @@ int main() {
 ### Приклад використання статичної бібліотеки
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\use_static_library.cpp
+// examples\use_static_library.cpp
 #include <iostream>
 
 extern int add(int a, int b);
@@ -114,7 +114,7 @@ int main() {
 ### Приклад використання динамічної бібліотеки
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\use_dynamic_library.cpp
+// examples\use_dynamic_library.cpp
 #include <iostream>
 #include <windows.h>
 
@@ -150,7 +150,7 @@ int main() {
 ### Приклад динамічного зв'язування часу завантаження
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\load_time_dynamic_binding.cpp
+// examples\load_time_dynamic_binding.cpp
 #include <iostream>
 #include <windows.h>
 
@@ -166,7 +166,7 @@ int main() {
 ### Приклад динамічного зв'язування часу виконання
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\run_time_dynamic_binding.cpp
+// examples\run_time_dynamic_binding.cpp
 #include <iostream>
 #include <windows.h>
 
@@ -193,7 +193,7 @@ int main() {
 ### Приклад відкладеного зв'язування
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\delayed_binding.cpp
+// examples\delayed_binding.cpp
 #include <iostream>
 #include <windows.h>
 
@@ -213,7 +213,7 @@ int main() {
 ### Створення простої бібліотеки DLL
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\simple_library.cpp
+// examples\simple_library.cpp
 #include <windows.h>
 
 extern "C" __declspec(dllexport) int add(int a, int b) {
@@ -235,7 +235,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 ### Використання бібліотеки DLL в програмі
 
 ```cpp
-// filepath: d:\NMK\nmk-sysprog\examples\use_library.cpp
+// examples\use_library.cpp
 #include <iostream>
 #include <windows.h>
 
