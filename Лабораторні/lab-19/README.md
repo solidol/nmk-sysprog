@@ -143,6 +143,92 @@ int main()
 }
 ```
 
+## Завдання для самостійного виконання
+
+1. **Обчислення суми елементів масиву**  
+   Напишіть програму, яка обчислює суму елементів масиву за допомогою OpenMP. Використовуйте директиву `parallel for` для розподілу роботи між потоками. Перевірте результат для масиву розміром 1 мільйон елементів.
+
+   ```cpp
+   #include "omp.h"
+   #include <iostream>
+   #include <vector>
+   int main() {
+       const int N = 1000000;
+       std::vector<int> arr(N, 1); // Масив із 1 мільйона одиниць
+       int sum = 0;
+
+       #pragma omp parallel for reduction(+:sum)
+       for (int i = 0; i < N; ++i) {
+           sum += arr[i];
+       }
+
+       std::cout << "Сума елементів масиву: " << sum << std::endl;
+       return 0;
+   }
+   ```
+
+2. **Пошук мінімального елемента в масиві**  
+   Напишіть програму, яка знаходить мінімальний елемент масиву за допомогою OpenMP. Використовуйте директиву `parallel for` та `critical` для синхронізації.
+
+   ```cpp
+   #include "omp.h"
+   #include <iostream>
+   #include <vector>
+   #include <limits>
+   int main() {
+       const int N = 1000000;
+       std::vector<int> arr(N);
+       for (int i = 0; i < N; ++i) arr[i] = rand() % 1000; // Заповнення випадковими числами
+
+       int min_value = std::numeric_limits<int>::max();
+
+       #pragma omp parallel for
+       for (int i = 0; i < N; ++i) {
+           #pragma omp critical
+           {
+               if (arr[i] < min_value) {
+                   min_value = arr[i];
+               }
+           }
+       }
+
+       std::cout << "Мінімальний елемент масиву: " << min_value << std::endl;
+       return 0;
+   }
+   ```
+
+3. **Обчислення скалярного добутку двох векторів**  
+   Напишіть програму, яка обчислює скалярний добуток двох векторів за допомогою OpenMP. Використовуйте директиву `parallel for` та `reduction`.
+
+   ```cpp
+   #include "omp.h"
+   #include <iostream>
+   #include <vector>
+   int main() {
+       const int N = 1000000;
+       std::vector<int> vec1(N, 2); // Вектор із 1 мільйона двійок
+       std::vector<int> vec2(N, 3); // Вектор із 1 мільйона трійок
+       int dot_product = 0;
+
+       #pragma omp parallel for reduction(+:dot_product)
+       for (int i = 0; i < N; ++i) {
+           dot_product += vec1[i] * vec2[i];
+       }
+
+       std::cout << "Скалярний добуток: " << dot_product << std::endl;
+       return 0;
+   }
+   ```
+
+4. **Обчислення середнього значення елементів масиву**  
+   Напишіть програму, яка обчислює середнє значення елементів масиву за допомогою OpenMP. Використовуйте директиву `parallel for` для розподілу роботи між потоками.
+
+5. **Сортування масиву за допомогою паралельного алгоритму**  
+   Реалізуйте програму, яка сортує масив за допомогою OpenMP. Використовуйте паралельний алгоритм, наприклад, паралельну версію сортування злиттям.
+
+6. **Обчислення матричного добутку**  
+   Напишіть програму, яка обчислює добуток двох матриць за допомогою OpenMP. Використовуйте директиву `parallel for` для розподілу роботи між потоками.
+
 ## Контрольні запитання
 
 1. Що таке OpenMP та для чого він використовується?
