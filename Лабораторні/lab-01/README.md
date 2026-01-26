@@ -19,8 +19,8 @@
 
 ## Хід роботи
 
-1. Завантажити програму Visual Studio 2008. Знайдіть на робочому столі ярлик з Visual Studio 2008 або Пуск → Всі програми → Microsoft → Microsoft Visual Studio 2008.
-2.	Ознайомитися з інтерфейсом Visual Studio 2008.
+1. Завантажити програму Visual Studio. Знайдіть на робочому столі ярлик з Visual Studio або Пуск → Всі програми → Microsoft → Microsoft Visual Studio.
+2.	Ознайомитися з інтерфейсом Visual Studio.
 
 ![Інтерфейс Visual Studio 2008](img/01-010.png)
 
@@ -45,10 +45,9 @@
 6.	Перевірити програму, що обчислює вираз $` y = tan(c) - \sqrt{\frac{b}{c}+a} `$ та скласти блок-схему
 
 ```cpp
-#include "stdafx.h"
 #include <iostream>
 #include <conio.h>
-#include <math.h>
+#include <cmath>
 using namespace std;
 void main()
 {
